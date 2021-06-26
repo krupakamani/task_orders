@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+div.solid {border-style: solid;}
+</style>
+<body>
+
+<h2>Add Order</h2>
+{% csrf_token %} 
+
+<div class="solid">
+
+<form action="">
+  <label for="fname">Customer</label>
+  <input type="text" id="customer"  placeholder="--select customer--"><br>
+  <label for="lname">Product</label>
+  <input type="text" id="product" placeholder="--select Product--"><br>
+  <label for="price">Price</label>
+  <label for="price">---</label>
+  <br>
+  
+  <label for="qty">Qty</label>
+  <input type="text" id="qty"><br><br>
+  <input type="submit" value="Place Order">
+  <button type="button">Cancle</button>
+</form>
+
+{{ msg }}
+
+</div>
+
+
+
+
+</body>
+</html>
+
